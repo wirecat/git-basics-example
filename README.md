@@ -18,6 +18,8 @@ others. Please refer to [facts/wirecat.txt](facts/wirecat.md) for an example.
 	  the Git installation.
 - A GitHub account.
   [GitHub Sign Up](https://github.com/signup).
+- A registered SSH Key to your GitHub account.
+  [GitHub Docs](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
 
 ## Exercise
 1. Fork this repository to your own GitHub account.
@@ -83,6 +85,8 @@ others. Please refer to [facts/wirecat.txt](facts/wirecat.md) for an example.
   [Offical docs](https://git-scm.com/docs/git-remote).
 
 ## Further Learning
+- Adding a new SSH key to your GitHub account
+  [GitHub Docs](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account).
 - GitHub pull request documentation.
   [GitHub Docs](https://docs.github.com/en/pull-requests).
 - Beginner Git commands you need to know.

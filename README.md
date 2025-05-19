@@ -1,44 +1,93 @@
 # git-basics-example
-
-The purpose of this repository is to show off the git flow for use in @kfcampbell's "git basics" demonstration.
+The purpose of this repository is to show off the git flow for use in @wirecat's
+"git basics" demonstration. This is a fork of @kfcampbells's "git basics"
+demonstration with slight tweaks.
 
 ## Usage
+The facts folder contains a set of files listing information about those who
+have done this workshop before. The goal is to add your own file to the facts
+folder with information about yourself that you are comfortable sharing with
+others. Please refer to [facts/wirecat.txt](facts/wirecat.md) for an example.
 
-To run the script, open a terminal and execute `./facts.sh`.
+## Prerequisites
+- Git installed on your machine.
+  [Git](https://git-scm.com/downloads)
+- A terminal or command line interface (CLI) to run git commands.
+	- On Linux or Mac, the builtin terminal is fine.
+	- On Windows, I recommend using the Git BASH terminal that comes with
+	  the Git installation.
+- A GitHub account.
+  [GitHub Sign Up](https://github.com/signup).
 
-(For Keegan, to separate dummy auth from his machine's auth):
-To build the Dockerfile, run `docker build -t facts .` To run the container, run `docker run --rm -it facts`. To connect to that container from VS Code, open the Command Palette and run Attach to Running Container.
+## Exercise
+1. Fork this repository to your own GitHub account.
+2. Clone your forked repository to your local machine.
+3. Create a new branch for your changes.
+4. Create a new file to the facts folder in the form of
+   `{GitHubUsername}.md`.
+5. Add your information to your file.
+6. Stage your file for commit.
+7. Commit your changes with a short commit message of what you've done.
+8. Push your changes to your forked repository on GitHub.
+9. Create a pull request to the original repository.
+10. Wait for your pull request to be reviewed and merged.
 
 ## `git` command reference
+### Cloning
+- `git clone {repoURL}`
+	- Clone a remote repository to your local machine.
+	  [Offical docs](https://git-scm.com/docs/git-clone).
 
 ### Branching
-
 - `git branch`
-	- show branches and see what branch you're on
-- `git switch -c yourNewBranch`
-	- create a new branch and switch to it
-- `git switch yourExistingBranch`
-	- switch to an existing branch
+	- Show branches and see what branch you're on.
+	  [Offical docs](https://git-scm.com/docs/git-branch).
 - `git branch -D yourExistingBranch`
-	- delete a branch (uppercase D because we want to delete it even if it's not fully merged)
+	- Delete a branch. Uppercase D to also pass --force, which allows us to
+	  delete a branch that hasn't merged upstreatm. Only deletes local branches.
+- `git checkout -b yourNewBranch`
+	- Create a new branch and switch to it.
+	  [Offical docs](https://git-scm.com/docs/git-checkout).
+- `git checkout yourExistingBranch`
+	- Switch to an existing branch.
 
-## Commit loop
-
+### Commit loop
 - `git status`
-	- what's changed since the last commit?
-- `git add {fileOrPatternMatcher}` to stage file for commit
-- `git restore --staged {fileOrPatternMatcher}` to unstage file(s) for commit
-- `git commit -m "{yourMessage}"` to add a commit with a simple message
-- `git reset HEAD~1` to "undo" a local commit
-- `git commit --amend` to alter a commit message
+	- Shows what's changed since the last commit, what's staged, and more.
+	  [Offical docs](https://git-scm.com/docs/git-status).
+- `git add {fileOrPatternMatcher}`
+	- Stage file(s) for commit. [Offical docs](https://git-scm.com/docs/git-add).
+- `git restore --staged {fileOrPatternMatcher}`
+	- Unstage file(s) from commit.
+	  [Offical docs](https://git-scm.com/docs/git-restore).
+- `git commit -m "{yourMessage}"`
+	- Add a commit with a simple message.
+	  [Offical docs](https://git-scm.com/docs/git-commit).
+- `git revert -n HEAD~1..`
+	- Reverts the last 1 local commits on current branch. Doesn't alter remote
+	  state without further intervention.
+	  [Offical docs](https://git-scm.com/docs/git-reset).
 
-## Commit log
-
-- `git log` to show all commits on a branch
-- `git show {commitSHAOrBranch}` to view details of a single commit
+### Commit log
+- `git log` to show all commits on a branch.
+  [Offical docs](https://git-scm.com/docs/git-log).
+- `git show {commitSHAOrBranch}` to view details of a single commit.
+  [Offical docs](https://git-scm.com/docs/git-show).
 
 ## Remote sync
+- `git pull` to fetch changes from the remote and merge them into your local
+  branch. [Offical docs](https://git-scm.com/docs/git-pull).
+- `git push` to push local changes to the remote.
+  [Offical docs](https://git-scm.com/docs/git-push).
+- `git remote  -v` to show all remotes.
+  [Offical docs](https://git-scm.com/docs/git-remote).
 
-- `git pull` to fetch changes from the remote and merge them into your local branch
-- `git push` to push local changes to the remote
-- `git remote  -v` to show all remotes
+## Further Learning
+- GitHub pull request documentation.
+  [GitHub Docs](https://docs.github.com/en/pull-requests).
+- Beginner Git commands you need to know.
+  [YouTube Video](https://www.youtube.com/watch?v=rE2zRhZdjFU).
+- How to create a pull request in 4 min.
+  [YouTube Video](https://www.youtube.com/watch?v=nCKdihvneS0).
+- How to merge a pull request.
+  [YouTube Video](https://www.youtube.com/watch?v=FDXSgyDGmho).

@@ -71,18 +71,23 @@ others. Please refer to [facts/wirecat.txt](facts/wirecat.md) for an example.
 	  [Offical docs](https://git-scm.com/docs/git-reset).
 
 ### Commit log
-- `git log` to show all commits on a branch.
-  [Offical docs](https://git-scm.com/docs/git-log).
-- `git show {commitSHAOrBranch}` to view details of a single commit.
-  [Offical docs](https://git-scm.com/docs/git-show).
+- `git log`
+	- how all commits on a branch.
+  	[Offical docs](https://git-scm.com/docs/git-log).
+- `git show {commitSHAOrBranch}`
+	- View details of a single commit.
+  	[Offical docs](https://git-scm.com/docs/git-show).
 
 ## Remote sync
-- `git pull` to fetch changes from the remote and merge them into your local
-  branch. [Offical docs](https://git-scm.com/docs/git-pull).
-- `git push` to push local changes to the remote.
-  [Offical docs](https://git-scm.com/docs/git-push).
-- `git remote  -v` to show all remotes.
-  [Offical docs](https://git-scm.com/docs/git-remote).
+- `git pull`
+	- Fetch changes from the remote and merge them into your local branch.
+ 	  [Offical docs](https://git-scm.com/docs/git-pull).
+- `git push`
+	- Push local changes to the remote.
+  	  [Offical docs](https://git-scm.com/docs/git-push).
+- `git remote  -v`
+	- Show all remotes.
+ 	  [Offical docs](https://git-scm.com/docs/git-remote).
 
 ## Further Learning
 - Adding a new SSH key to your GitHub account

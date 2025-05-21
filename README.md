@@ -3,6 +3,8 @@ The purpose of this repository is to show off the git flow for use in @wirecat's
 "git basics" demonstration. This is a fork of @kfcampbells's "git basics"
 demonstration with slight tweaks.
 
+Test change, probably don't merge this.
+
 ## Usage
 The facts folder contains a set of files listing information about those who
 have done this workshop before. The goal is to add your own file to the facts
